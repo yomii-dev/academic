@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,63 +11,129 @@
       crossorigin="anonymous"
     />
     <style>
+      @font-face {
+        font-family: "Delfino";
+        src: url("assets/Delfino.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
       * {
         border-radius: 0 !important;
       }
+
+      body {
+        background-color: #24273a;
+      }
+
+      nav {
+        background-color: #181926;
+      }
+
       .card {
-        height: 10rem;
+        min-height: 12rem;
+        background-color: #363a4f;
       }
     </style>
   </head>
 
   <body>
-    <div class="container">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="" alt="Site Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="#"
+              >Activities</a
+            >
+            <a class="nav-link disabled" aria-disabled="true">Projects</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
       <div class="row gy-3">
-        <div class="col-sm-4">
-          <div class="card p-3" style="height: 100%;"></div>
+        <!--big square-ish thingie-->
+        <div class="col-lg-4">
+          <div class="card p-3 h-100">
+            <img
+              src="assets/KatAM_cover_art.png"
+              alt="Kirby and the Amazing Mirror "
+            />
+          </div>
         </div>
 
-        <div class="col-sm-8">
-
+        <div class="col-lg-8">
           <div class="row gy-3">
-            <div class="col-sm-9">
-              <div class="card p-3"></div>
+            <div class="col-lg-9">
+              <div class="card p-3">
+                <h1 style="font-family: Delfino">Kirby & The Amazing Mirror</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, incidunt itaque, aut fuga ex ea quasi distinctio illum
+                  magni ullam exercitationem consequuntur tempore ipsam,
+                  adipisci veritatis pariatur. Minima facere architecto omnis
+                  debitis quam, ut, perferendis tempore deserunt explicabo, illo
+                  in.
+                </p>
+              </div>
             </div>
 
-            <div class="col-sm-3">
-              <div class="card p-3"></div>
+            <div class="col-lg-3">
+              <div class="card p-3 ratio ratio-1x1 h-100">
+                <img src="assets/silly.gif" alt="wee" />
+              </div>
             </div>
 
-            <div class="col-sm-12">
+            <div class="col-lg-12">
               <div class="card p-3"></div>
             </div>
           </div>
-
         </div>
       </div>
 
-      <div class="row my-2 gy-3">
-
-        <div class="col-sm-8">
-           <div class="card p-3"></div>
+      <div class="row my-1 gy-3">
+        <div class="col-lg-8">
+          <div class="card p-3">
+            <img
+              src="assets/KatAM_M_MirrorWorld.png"
+              alt="Mirror World"
+              class="object-fit-fill h-100"
+            />
+          </div>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-lg-4">
           <div class="card p-3"></div>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-lg-3">
           <div class="card p-3"></div>
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-lg-6">
           <div class="card p-3"></div>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-lg-3">
           <div class="card p-3"></div>
         </div>
-
       </div>
     </div>
 
