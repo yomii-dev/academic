@@ -17,6 +17,12 @@
         font-weight: normal;
         font-style: normal;
       }
+      @font-face {
+        font-family: "Pixelfy Sans";
+        src: url("assets/PixelifySans-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
 
       * {
         border-radius: 0 !important;
@@ -33,13 +39,22 @@
       .card {
         min-height: 12rem;
         opacity: 90%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .font-pixel {
+        font-family: "Pixelfy Sans", sans-serif;
+      }
+
+      .font-delfino {
+          font-family: "Delfino";
       }
     </style>
   </head>
 
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg shadow">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="" alt="Site Logo" />
@@ -85,14 +100,12 @@
           <div class="row gy-3">
             <div class="col-lg-9">
               <div class="card p-3 h-100 justify-content-center">
-                <h1 style="font-family: Delfino">Kirby & The Amazing Mirror</h1>
+                <h1 class="font-delfino">Kirby & The Amazing Mirror</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nulla, incidunt itaque, aut fuga ex ea quasi distinctio illum
-                  magni ullam exercitationem consequuntur tempore ipsam,
-                  adipisci veritatis pariatur. Minima facere architecto omnis
-                  debitis quam, ut, perferendis tempore deserunt explicabo, illo
-                  in.
+                  Explore a huge interconnected Metroidvania-style world,
+                  hunting for hidden paths, mirror shards, and bosses. With the
+                  help of Kirby's copy abilities, and his cell phone that can
+                  summon helper Kirbys or warp back.
                 </p>
               </div>
             </div>
@@ -109,7 +122,22 @@
             </div>
 
             <div class="col-lg-12">
-              <div class="card p-3"></div>
+              <div class="card">
+                <img
+                  src="assets/KatAM_M_MirrorWorld.png"
+                  alt="Mirror World"
+                  class="card-img object-fit-cover h-100 opacity-50"
+                  style="max-height: 12rem"
+                />
+                <div
+                  class="card-img-overlay d-flex justify-content-center align-items-center p-5"
+                >
+                  <h2 class="card-text text-center font-pixel text-black">
+                      Every mirror hides a door, and every door hides a world
+                      waiting to be found...
+                  </h2>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -121,25 +149,31 @@
         </div>
 
         <div class="col-lg-4">
+          <div class="card p-3"></div>
+        </div>
+
+        <div class="col-lg-3">
           <div class="card p-3">
-            <img
-              src="assets/KatAM_M_MirrorWorld.png"
-              alt="Mirror World"
-              class="object-fit-fill h-100"
-            />
+            <img src="" alt="Main Kirb">
           </div>
         </div>
 
         <div class="col-lg-3">
-          <div class="card p-3"></div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="card p-3"></div>
+          <div class="card p-3">
+            <img src="" alt="Green Kirb">
+          </div>
         </div>
 
         <div class="col-lg-3">
-          <div class="card p-3"></div>
+          <div class="card p-3">
+            <img src="" alt="Yellow Kirb">
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card p-3">
+            <img src="" alt="Red Kirb">
+          </div>
         </div>
       </div>
     </div>
