@@ -67,14 +67,12 @@
       addCard("webdev-activities");
 
       function addCard(subject, filePath = "data.json") {
-        let data;
         let parentElement = document.getElementById("parent");
 
         fetch(filePath)
           .then((response) => response.json())
           .then((subjects) => {
-            data = subjects[subject];
-            data.forEach((act) => {
+            subjects[subject].forEach((act) => {
               parentElement.innerHTML += `
             <a
               href="${subject}/${act.directory}/index.html"
