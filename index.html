@@ -64,36 +64,33 @@
     ></script>
 
     <script>
-      let data;
+      addCard("webdev-activities");
 
-      fetch("data.json")
-        .then((response) => response.json())
-        .then((activities) => {
-          data = activities["webdev-activities"];
-          addCard(data, "webdev-activities");
-        });
-
-      function addCard(data, subject) {
-        let act;
+      function addCard(subject, filePath = "data.json") {
+        let data;
         let parentElement = document.getElementById("parent");
 
-        for (let i = 0; i < data.length; i++) {
-          act = data[i];
-          parentElement.innerHTML +=
-            `
-          <a href="` +
-            subject +
-            "/" +
-            act["directory"] +
-            `/index.html" class="col-12 col-md-6 col-lg-3">
-            <div class="card text-ctp p-3 h-100">
-              <h3>` +
-            act["title"] +
-            `</h3>
-            </div>
-          </a>
-          `; // thank you formatter
-        }
+        fetch(filePath)
+          .then((response) => response.json())
+          .then((subjects) => {
+            data = subjects[subject];
+            data.forEach((act) => {
+              parentElement.innerHTML +=
+                `
+            <a href="` +
+                subject +
+                "/" +
+                act.directory +
+                `/index.html" class="col-12 col-md-6 col-lg-3">
+              <div class="card text-ctp p-3 h-100">
+                <h3>` +
+                act.title +
+                `</h3>
+              </div>
+            </a>
+            `; // thank you formatter
+            });
+          });
       }
     </script>
   </body>
