@@ -50,7 +50,7 @@ body {
 }
 
 .card {
-    background-color: var(--ctp-surface1);
+    background-color: var(--ctp-surface0);
     color: var(--ctp-text);
     border-radius: 0px;
 }
@@ -69,4 +69,8 @@ body {
 
 .text-ctp-lavender {
     color: var(--ctp-lavender);
+}
+
+.text-ctp-mauve {
+    color: var(--ctp-mauve);
 }
