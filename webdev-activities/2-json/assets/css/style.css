@@ -74,3 +74,13 @@ body {
 .text-ctp-mauve {
     color: var(--ctp-mauve);
 }
+
+.btn-ctp-mauve {
+    background-color: var(--ctp-mauve);
+    color: var(--ctp-crust);
+}
+
+.btn-ctp-mauve:hover {
+    background-color: var(--ctp-lavender);
+    color: var(--ctp-crust);
+}
