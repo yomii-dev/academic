@@ -36,6 +36,11 @@
     --ctp-crust: #232634;
 }
 
+html {
+    scroll-padding-top: 8rem;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--ctp-base);
     color: var(--ctp-text);
