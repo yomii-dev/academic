@@ -57,7 +57,6 @@ body {
 .card {
     background-color: var(--ctp-surface0);
     color: var(--ctp-text);
-    border-radius: 0px;
 }
 
 .hero {
@@ -66,6 +65,10 @@ body {
 
 .bg-ctp-surface0 {
     background-color: var(--ctp-surface0);
+}
+
+.text-ctp-mantle {
+    color: var(--ctp-mantle);
 }
 
 .text-ctp-subtext0 {
