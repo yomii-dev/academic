@@ -16,7 +16,7 @@ function addCards(section, filePath = "data.json") {
               class="card-img-top"
               alt="Volume ${key.volume} Cover Art"
             />
-            <div class="card-body p-3 d-flex justify-content-between align-content-center">
+            <div class="card-body p-3 gap-3 d-flex justify-content-between align-content-center">
               <p class="my-auto">Volume ${key.volume}</p>
                <button
                 type="button"
