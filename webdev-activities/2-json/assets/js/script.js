@@ -9,7 +9,7 @@ function addCards(section, filePath = "data.json") {
     .then((data) => {
       data[section].forEach((key) => {
         volumesSection.innerHTML += `
-        <div class="col-6 col-md-4 col-lg-3">
+        <div class="col-6 col-lg-4 col-xl-3">
           <div class="card h-100">
             <img
               src="${key.imagePath}"
