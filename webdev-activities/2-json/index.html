@@ -111,18 +111,20 @@
       <div class="row">
         <div class="col">
           <div class="card rounded-5 overflow-hidden text-light">
-            <!--Dark img overlay-->
-            <div class="position-absolute w-100 h-100 bg-dark opacity-50"></div>
-
             <img
               src="assets/img/majo-no-tabitabi-bg.jpg"
-              class="card-img"
+              class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
               alt="Majo no Tabitabi BG Art"
             />
 
-            <div class="card-img-overlay m-4">
+            <!--Dark img overlay-->
+            <div
+              class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
+            ></div>
+
+            <div class="position-relative p-4 p-md-5">
               <h5 class="card-title">About the Series</h5>
-              <p class="card-text">
+              <p class="card-text mb-0">
                 Elaina is a young, ash-haired witch who sets out to see the
                 world for herself. Each story follows her to a new country,
                 where she meets travelers, townsfolk, and strangers whose lives
