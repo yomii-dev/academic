@@ -11,7 +11,7 @@
         "jp": 344,
         "en": 240
       },
-      "imagePath": "assets/img/LN-vol1.webp"
+      "imagePath": "assets/img/Light_Novel_Volume_1.webp"
     },
     {
       "volume": 2,
@@ -24,7 +24,7 @@
         "jp": 320,
         "en": 224
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_2.webp"
     },
     {
       "volume": 3,
@@ -37,7 +37,7 @@
         "jp": 344,
         "en": 246
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_3.webp"
     },
     {
       "volume": 4,
@@ -50,7 +50,7 @@
         "jp": 312,
         "en": 248
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_4.webp"
     },
     {
       "volume": 5,
@@ -63,7 +63,7 @@
         "jp": 304,
         "en": 304
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_5.webp"
     },
     {
       "volume": 6,
@@ -76,7 +76,7 @@
         "jp": 304,
         "en": 224
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_6.webp"
     },
     {
       "volume": 7,
@@ -89,7 +89,7 @@
         "jp": 320,
         "en": 224
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_7.webp"
     },
     {
       "volume": 8,
@@ -102,7 +102,7 @@
         "jp": 304,
         "en": 224
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_8.webp"
     },
     {
       "volume": 9,
@@ -115,7 +115,7 @@
         "jp": 256,
         "en": 246
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_9.webp"
     },
     {
       "volume": 10,
@@ -128,7 +128,7 @@
         "jp": 352,
         "en": 246
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_10.webp"
     },
     {
       "volume": 11,
@@ -141,7 +141,7 @@
         "jp": 256,
         "en": 192
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_11.webp"
     },
     {
       "volume": 12,
@@ -154,7 +154,7 @@
         "jp": 256,
         "en": 200
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_12.webp"
     },
     {
       "volume": 13,
@@ -167,7 +167,7 @@
         "jp": 256,
         "en": 246
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_13.webp"
     },
     {
       "volume": 14,
@@ -180,7 +180,7 @@
         "jp": 248,
         "en": 200
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_14.webp"
     },
     {
       "volume": 15,
@@ -193,7 +193,7 @@
         "jp": 288,
         "en": 296
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_15.webp"
     },
     {
       "volume": 16,
@@ -206,7 +206,7 @@
         "jp": 280,
         "en": 232
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_16.webp"
     },
     {
       "volume": 17,
@@ -219,7 +219,7 @@
         "jp": 336,
         "en": 278
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_17.webp"
     },
     {
       "volume": 18,
@@ -232,7 +232,7 @@
         "jp": 288,
         "en": null
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_18.webp"
     },
     {
       "volume": 19,
@@ -245,7 +245,7 @@
         "jp": 304,
         "en": null
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_19.webp"
     },
     {
       "volume": 20,
@@ -258,7 +258,7 @@
         "jp": null,
         "en": 304
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_20.webp"
     },
     {
       "volume": 21,
@@ -271,7 +271,7 @@
         "jp": 288,
         "en": null
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_21.webp"
     },
     {
       "volume": 22,
@@ -284,7 +284,7 @@
         "jp": 288,
         "en": null
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_22.webp"
     },
     {
       "volume": 23,
@@ -297,7 +297,7 @@
         "jp": 288,
         "en": null
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_23.webp"
     },
     {
       "volume": 24,
@@ -310,7 +310,7 @@
         "jp": 288,
         "en": null
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_24.webp"
     },
     {
       "volume": 25,
@@ -323,7 +323,7 @@
         "jp": null,
         "en": 256
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Light_Novel_Volume_25.webp"
     }
   ],
   "characters": [
