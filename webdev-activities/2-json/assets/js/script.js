@@ -9,8 +9,8 @@ function addCards(section, filePath = "data.json") {
     .then((data) => {
       data[section].forEach((key) => {
         volumesSection.innerHTML += `
-        <div class="col-4">
-          <div class="card p-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card p-3 h-100">
             <img
               src="${key.imagePath}"
               class="card-img-top"
@@ -21,11 +21,11 @@ function addCards(section, filePath = "data.json") {
             </div>
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn btn-ctp-mauve"
               data-bs-toggle="modal"
               data-bs-target="#volume${key.volume}"
             >
-              Launch demo modal
+              More Info
             </button>
           </div>
         </div>
@@ -43,7 +43,6 @@ function addCards(section, filePath = "data.json") {
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div>
           </div>
