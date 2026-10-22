@@ -10,23 +10,23 @@ function addCards(section, filePath = "data.json") {
       data[section].forEach((key) => {
         volumesSection.innerHTML += `
         <div class="col-6 col-md-4 col-lg-3">
-          <div class="card p-3 h-100">
+          <div class="card h-100">
             <img
               src="${key.imagePath}"
               class="card-img-top"
               alt="Volume ${key.volume} Cover Art"
             />
-            <div class="card-body">
-              <p>Volume ${key.volume}</p>
+            <div class="card-body p-3 d-flex justify-content-between align-content-center">
+              <p class="my-auto">Volume ${key.volume}</p>
+               <button
+                type="button"
+                class="btn btn-ctp-mauve"
+                data-bs-toggle="modal"
+                data-bs-target="#volume${key.volume}"
+              >
+                More Info
+              </button>
             </div>
-            <button
-              type="button"
-              class="btn btn-ctp-mauve"
-              data-bs-toggle="modal"
-              data-bs-target="#volume${key.volume}"
-            >
-              More Info
-            </button>
           </div>
         </div>
 
