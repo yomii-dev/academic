@@ -337,7 +337,7 @@
         "jp": "Kaede Hondo",
         "en": "Amber Lee Connors"
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Elaina.webp"
     },
     {
       "name": "Fran",
@@ -349,7 +349,7 @@
         "jp": "Kana Hanazawa",
         "en": "Jad Saxton"
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Fran.webp"
     },
     {
       "name": "Saya",
@@ -361,7 +361,7 @@
         "jp": "Tomoyo Kurosawa",
         "en": "Dani Chambers"
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Saya.webp"
     },
     {
       "name": "Sheila",
@@ -373,7 +373,7 @@
         "jp": "Yoko Hikasa",
         "en": "Leah Clark"
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Sheila.webp"
     },
     {
       "name": "Mina",
@@ -385,7 +385,7 @@
         "jp": "Minami Takahashi",
         "en": null
       },
-      "imagePath": ""
+      "imagePath": "assets/img/Mina.webp"
     }
   ]
 }
