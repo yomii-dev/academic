@@ -1,7 +1,7 @@
 {
   "volumes": [
     {
-      "volume": 1,
+      "volumeNum": 1,
       "summary": "It's not about the destination... What's your favorite story? Does it have a hero who slays a dragon and saves a princess? Or a child of prophecy destined for greatness? Well, my favorite story is a little different. It's the tale of a witch who travels the world, seeking nothing in particular. With no quest of her own, she's free to wander wherever the wind takes her, adding a few pages to the story of whomever she meets before setting off on her next adventure. At the end of her travels, the witch takes on an apprentice who will one day begin her own journey. And so the cycle continues, or so the story goes. Now, the witch who starts the story anew... who could she be?",
       "releaseDate": {
         "jp": "2016-04-14",
@@ -14,7 +14,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_1.webp"
     },
     {
-      "volume": 2,
+      "volumeNum": 2,
       "summary": "Another day, another country. As her broom carries her across the world, Elaina encounters characters ranging from a princess who fled her wedding, to a country whose king could tell no lies, to cat spirits that captivate humans! With such a wild and wondrous world to explore, how could anyone stay rooted in one place?",
       "releaseDate": {
         "jp": "2016-07-14",
@@ -27,7 +27,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_2.webp"
     },
     {
-      "volume": 3,
+      "volumeNum": 3,
       "summary": " Dream demons, self-proclaimed werewolves, grape-stomping maidens and more. No matter how much Elaina sees, there's always something new to explore. But while investigating \"the Witches of Darkness\", she has another unexpected reunion...",
       "releaseDate": {
         "jp": "2016-12-14",
@@ -40,7 +40,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_3.webp"
     },
     {
-      "volume": 4,
+      "volumeNum": 4,
       "summary": "It’s a wonder how one witch can see so many fantastic places yet never settle down. Then again, when your average encounter involves biting into a poisonous apple, meeting a clumsy spy, rendezvousing with a flying dragon, finding a sunken city, exploring a frozen town, and more...you might find yourself reluctant to stay in one place, too. Be that as it may, this isn’t the case for everyone. In fact, there’s nothing Amnesia wants more than to go home, if only she could piece her memories back together...",
       "releaseDate": {
         "jp": "2017-07-14",
@@ -53,7 +53,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_4.webp"
     },
     {
-      "volume": 5,
+      "volumeNum": 5,
       "summary": "Fresh encounters and warm reunions abound on the next leg of Elaina’s journey. In addition to travels involving a witch in a bird cage, a ruthless princess, a phantom thief, and a pinch of stardust, there have even been whispers of…love?",
       "releaseDate": {
         "jp": "2017-11-14",
@@ -66,7 +66,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_5.webp"
     },
     {
-      "volume": 6,
+      "volumeNum": 6,
       "summary": "It's not about the destination... On this stretch of her travels, Elaina encounters an upstart broom racer, a bandit and his mother, a political power couple, the secret lives of tools, a heartbroken medicine maker, a cursed slave, a demon down on their luck, and last but not least, a teacher and a schoolgirl at a certain academy who share a peculiar entanglement with a baker. Venturing here, there, and everywhere, Elaina spins yarn after whimsical yarn. What new farewells await her this time?",
       "releaseDate": {
         "jp": "2018-03-14",
@@ -79,7 +79,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_6.webp"
     },
     {
-      "volume": 7,
+      "volumeNum": 7,
       "summary": "No matter what corner of the world Elaina seems to find herself in, her journey shows no signs of slowing down. During this particularly magical string of adventures, she encounters a mysterious woman who runs a used bookstore, a renowned witch tasked with eliminating a group of bandits, a man and woman who find common ground within their checkered pasts, a land of witches obsessed with statues, a village populated only by beautiful women, a dragon emerging from its four-hundred-year slumber inside a boulder, and the witch who sealed it there. Many of these tales seem almost quaint, though, in comparison to the legendary account of two young witches and their discovery of a time-reversing pocket watch",
       "releaseDate": {
         "jp": "2018-07-13",
@@ -92,7 +92,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_7.webp"
     },
     {
-      "volume": 8,
+      "volumeNum": 8,
       "summary": "If there's one immutable truth in which our Wandering Witch can take comfort, it's that each new destination promises a one-of-a-kind experience. Nostalgic flavors of the past mingle with the refreshing taste of the present, and as with a loaf of bread hot out of the oven, Elaina is ever ready to sink her teeth in. This time, however, Elaina may have bitten off a little more than she can chew. When she at last crosses paths with a certain dark-haired girl, a pivotal chapter in her life will see its conclusion...or perhaps its beginning?",
       "releaseDate": {
         "jp": "2018-11-15",
@@ -105,7 +105,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_8.webp"
     },
     {
-      "volume": 9,
+      "volumeNum": 9,
       "summary": "During one’s journey, it’s not uncommon to pick up the odd traveling companion or two. And who could be better company for Elaina than her own teacher, the Stardust Witch, Fran? On this leg of her travels, Elaina encounters a commander and a record keeper living in a mysterious restaurant, two students on holiday who decide to put a historic spin on their vacation, a charcoal witch and her talented assistant, an oddly familiar tale of a girl covered in cinders and the prince she pines after, and finally, the friendship between a daughter of a distinguished mage family and a girl with no home of her own. How will these fresh encounters ultimately influence the course of Elaina’s travels? Only time will tell...",
       "releaseDate": {
         "jp": "2019-04-15",
@@ -118,7 +118,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_9.webp"
     },
     {
-      "volume": 10,
+      "volumeNum": 10,
       "summary": "Though Elaina’s journey alongside Fran may be drawing to a close, the two still have much to see and do together. On this leg of the trip, they will encounter a lovelorn mermaid and a lateblooming nomad, a troublesome face from Fran’s youth, a narrowminded novelist, sisters in search of a new home, a magician who lives in a castle in the sky, a demon lurking within the pages of a book, and so much more. Most every tale has its highs and lows, but this time around, Elaina will find herself in the hot seat as she’s grilled by many of the friends she’s made along the way! What could she have possibly done to earn their ire?",
       "releaseDate": {
         "jp": "2019-08-09",
@@ -131,7 +131,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_10.webp"
     },
     {
-      "volume": 11,
+      "volumeNum": 11,
       "summary": "The life of a traveler is one of unparalleled freedom, and Elaina is determined to live hers to the fullest! Even if that means enduring the occasional misadventure. On this leg of her journey, she encounters a puppet detective, a pair of witches living in a suspicious manor, a theater troupe made the talk of the town by unsavory rumors, a country that practices a strict veggie–only diet, a highly intelligent magical beast at odds with a band of forest nomads, and a vampire who wanders from nation to nation in search of the blood of beautiful women. Will wonders ever cease for this Wandering Witch?",
       "releaseDate": {
         "jp": "2019-11-14",
@@ -144,7 +144,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_11.webp"
     },
     {
-      "volume": 12,
+      "volumeNum": 12,
       "summary": "Just when you thought their travels were slowing down, Elaina and friends dive headfirst into a slew of new adventures! On this leg of her journey, the ashen witch encounters the seldom-seen dark elves, bumps into a bizarre photographer, attempts to recover a little girl’s long-lost smile, and continues her never-ending quest to fill both her pockets and stomach while an exorcist endeavors to free her from the clutches of avarice. Meanwhile, the sisters Amnesia and Avelia explore a new city, and Saya runs into the last person she expected to see...",
       "releaseDate": {
         "jp": "2020-04-14",
@@ -157,7 +157,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_12.webp"
     },
     {
-      "volume": 13,
+      "volumeNum": 13,
       "summary": "It’s impossible to predict who Elaina will meet on each leg of her journey, but one thing is always certain: With every new encounter, adventure is never far behind! She’ll cross paths with a money-hungry beauty, a man who smiles in the face of death, a troubled slaver and his ex-girlfriend, an undercover detective, a very fluffy witch, and another witch with horrible communication skills. Perhaps one day our Wandering Witch will even happen upon someone who doesn’t have a problem for her to solve!",
       "releaseDate": {
         "jp": "2020-07-14",
@@ -170,7 +170,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_13.webp"
     },
     {
-      "volume": 14,
+      "volumeNum": 14,
       "summary": "In a certain place, there was a witch. Her name was Elaina. Due to the influence of a certain story, she embarks on a journey and travels around the world. Along her adventure, she’ll encounter…gossip-loving adults who gather at the “traveler’s restaurant,” a young “stardust witch” and her teacher, a resident of the “country of performers,” a “condemned” woman from a recovering country who protects public order, a timid staff member of “Hoankyoku” chasing a vicious serial killer, and the “Witch of the Lake Shore,” a genius inventor who made the country that never sleeps.",
       "releaseDate": {
         "jp": "2020-10-14",
@@ -183,8 +183,8 @@
       "imagePath": "assets/img/Light_Novel_Volume_14.webp"
     },
     {
-      "volume": 15,
-      "summary": "Somewhere in the world is a witch named Elaina. As she wanders from one place to the next, she writes down a log of her journeys. This book is a collection of those tales.  This volume includes 43 short stories previously distributed as special bonuses and seasonal extras, or posted on social media—revised and expanded, along with an entirely new episode!",
+      "volumeNum": 15,
+      "summary": "Somewhere in the world is a witch named Elaina. As she wanders from one place to the next, she writes down a log of her journeys. This book is a collection of those tales.  This volumeNum includes 43 short stories previously distributed as special bonuses and seasonal extras, or posted on social media—revised and expanded, along with an entirely new episode!",
       "releaseDate": {
         "jp": "2020-12-10",
         "en": "2025-04-6"
@@ -196,7 +196,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_15.webp"
     },
     {
-      "volume": 16,
+      "volumeNum": 16,
       "summary": "During her journey to find herself, Elaina encounters a host of interesting people: A brand-new adventurer chasing a legend, the charcoal witch spurred on by righteous indignation, a close pair of sisters dressed like knights, a phantom serial killer, a broom desperate to save an abandoned umbrella, and a witch who battles ghosts in order to protect her country. But as Elaina continues her travels, she will say as many goodbyes as hellos.",
       "releaseDate": {
         "jp": "2021-03-12",
@@ -209,7 +209,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_16.webp"
     },
     {
-      "volume": 17,
+      "volumeNum": 17,
       "summary": "It's not about the destination... It’s not often that our Wandering Witch extends her stay in one place. But when she does, you can bet there’ll be a host of quirky new encounters to bring the story to life! Within the walls of this enigmatic city, we’ll meet a socially awkward girl obsessed with the occult; an ethereal beauty said to stalk the halls of a haunted house; the owner of an upscale restaurant and his eccentric customers; a refined young lady fresh off her musical debut; a gloomy sorceress who steals people’s memories; and a headstrong, hyperactive magical girl. But who will be friend and who will be foe as Elaina unravels these mysteries?",
       "releaseDate": {
         "jp": "2021-07-14",
@@ -222,7 +222,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_17.webp"
     },
     {
-      "volume": 18,
+      "volumeNum": 18,
       "summary": "",
       "releaseDate": {
         "jp": "2022-01-14",
@@ -235,7 +235,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_18.webp"
     },
     {
-      "volume": 19,
+      "volumeNum": 19,
       "summary": "Guided by the Ashen Witch, the girls embark on new lives. Through a series of extraordinary destinies and fateful connections, they meet again, only to part ways once more. Who will meet, who will act together, and who will part ways this time? ",
       "releaseDate": {
         "jp": "2022-09-14",
@@ -248,7 +248,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_19.webp"
     },
     {
-      "volume": 20,
+      "volumeNum": 20,
       "summary": "",
       "releaseDate": {
         "jp": "2023-03-15",
@@ -261,7 +261,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_20.webp"
     },
     {
-      "volume": 21,
+      "volumeNum": 21,
       "summary": "",
       "releaseDate": {
         "jp": "2023-10-13",
@@ -274,7 +274,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_21.webp"
     },
     {
-      "volume": 22,
+      "volumeNum": 22,
       "summary": "",
       "releaseDate": {
         "jp": "2024-03-15",
@@ -287,7 +287,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_22.webp"
     },
     {
-      "volume": 23,
+      "volumeNum": 23,
       "summary": "Once upon a time, there was a wandering witch. Her name was Elaina. This time, too, she seems to be having strange experiences as she travels through various countries. She hears scary stories from an employee of the United Magic Association, teaches simple magic to a street performer, investigates rumors about a house in the countryside, deciphers an old, mysterious manuscript, becomes the first fan of an actress who dreams of becoming a top star, and helps the \"Crimson Witch\" who can see the memories of objects... \"It's alright, it's alright...\" Guided by a mysterious power, she continues to experience bizarre encounters and partings. ",
       "releaseDate": {
         "jp": "2024-10-13",
@@ -300,7 +300,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_23.webp"
     },
     {
-      "volume": 24,
+      "volumeNum": 24,
       "summary": "Once upon a time, there was a wandering witch. Her name was Elaina. She continued her carefree solo journey without ever growing tired of it. This time, what will she experience? She receives love advice from a young lady attending a magic school, is chased by a handsome young man and a group of men in black, gets caught up in a conflict between residents of a divided country, sneaks into a \"dream world\" with a girl who claims to be a slime, and has a fateful reunion with her wandering swordsman (her sister)!? \"It's been so long. How have you been?\" The witch and the swordsman weave a story of new encounters and farewells.",
       "releaseDate": {
         "jp": "2025-03-15",
@@ -313,7 +313,7 @@
       "imagePath": "assets/img/Light_Novel_Volume_24.webp"
     },
     {
-      "volume": 25,
+      "volumeNum": 25,
       "summary": "",
       "releaseDate": {
         "jp": "2026-03-14",
