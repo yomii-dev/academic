@@ -8,8 +8,8 @@
         "en": "2020-01-28"
       },
       "pages": {
-        "jp": 344,
-        "en": 240
+        "jp": "344 p",
+        "en": "240 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_1.webp"
     },
@@ -21,8 +21,8 @@
         "en": "2020-06-23"
       },
       "pages": {
-        "jp": 320,
-        "en": 224
+        "jp": "320 p",
+        "en": "224 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_2.webp"
     },
@@ -34,8 +34,8 @@
         "en": "2020-11-10"
       },
       "pages": {
-        "jp": 344,
-        "en": 246
+        "jp": "344 p",
+        "en": "246 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_3.webp"
     },
@@ -47,8 +47,8 @@
         "en": "2021-01-19"
       },
       "pages": {
-        "jp": 312,
-        "en": 248
+        "jp": "312 p",
+        "en": "248 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_4.webp"
     },
@@ -60,8 +60,8 @@
         "en": "2021-05-25"
       },
       "pages": {
-        "jp": 304,
-        "en": 304
+        "jp": "304 p",
+        "en": "304 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_5.webp"
     },
@@ -73,8 +73,8 @@
         "en": "2021-9-28"
       },
       "pages": {
-        "jp": 304,
-        "en": 224
+        "jp": "304 p",
+        "en": "224 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_6.webp"
     },
@@ -86,8 +86,8 @@
         "en": "2022-03-15"
       },
       "pages": {
-        "jp": 320,
-        "en": 224
+        "jp": "320 p",
+        "en": "224 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_7.webp"
     },
@@ -99,8 +99,8 @@
         "en": "2022-05-17"
       },
       "pages": {
-        "jp": 304,
-        "en": 224
+        "jp": "304 p",
+        "en": "224 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_8.webp"
     },
@@ -112,8 +112,8 @@
         "en": "2022-10-04"
       },
       "pages": {
-        "jp": 256,
-        "en": 246
+        "jp": "256 p",
+        "en": "246 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_9.webp"
     },
@@ -125,8 +125,8 @@
         "en": "2023-03-23"
       },
       "pages": {
-        "jp": 352,
-        "en": 246
+        "jp": "352 p",
+        "en": "246 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_10.webp"
     },
@@ -138,8 +138,8 @@
         "en": "2023-07-18"
       },
       "pages": {
-        "jp": 256,
-        "en": 192
+        "jp": "256 p",
+        "en": "192 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_11.webp"
     },
@@ -151,8 +151,8 @@
         "en": "2023-11-21"
       },
       "pages": {
-        "jp": 256,
-        "en": 200
+        "jp": "256 p",
+        "en": "200 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_12.webp"
     },
@@ -164,8 +164,8 @@
         "en": "2024-04-16"
       },
       "pages": {
-        "jp": 256,
-        "en": 246
+        "jp": "256 p",
+        "en": "246 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_13.webp"
     },
@@ -177,8 +177,8 @@
         "en": "2024-10-22"
       },
       "pages": {
-        "jp": 248,
-        "en": 200
+        "jp": "248 p",
+        "en": "200 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_14.webp"
     },
@@ -190,8 +190,8 @@
         "en": "2025-04-6"
       },
       "pages": {
-        "jp": 288,
-        "en": 296
+        "jp": "288 p",
+        "en": "296 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_15.webp"
     },
@@ -203,8 +203,8 @@
         "en": "2026-01-06"
       },
       "pages": {
-        "jp": 280,
-        "en": 232
+        "jp": "280 p",
+        "en": "232 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_16.webp"
     },
@@ -216,8 +216,8 @@
         "en": "2026-08-11"
       },
       "pages": {
-        "jp": 336,
-        "en": 278
+        "jp": "336 p",
+        "en": "278 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_17.webp"
     },
@@ -229,7 +229,7 @@
         "en": null
       },
       "pages": {
-        "jp": 288,
+        "jp": "288 p",
         "en": null
       },
       "imagePath": "assets/img/Light_Novel_Volume_18.webp"
@@ -242,7 +242,7 @@
         "en": null
       },
       "pages": {
-        "jp": 304,
+        "jp": "304 p",
         "en": null
       },
       "imagePath": "assets/img/Light_Novel_Volume_19.webp"
@@ -256,7 +256,7 @@
       },
       "pages": {
         "jp": null,
-        "en": 304
+        "en": "304 p"
       },
       "imagePath": "assets/img/Light_Novel_Volume_20.webp"
     },
@@ -268,7 +268,7 @@
         "en": null
       },
       "pages": {
-        "jp": 288,
+        "jp": "288 p",
         "en": null
       },
       "imagePath": "assets/img/Light_Novel_Volume_21.webp"
@@ -281,7 +281,7 @@
         "en": null
       },
       "pages": {
-        "jp": 288,
+        "jp": "288 p",
         "en": null
       },
       "imagePath": "assets/img/Light_Novel_Volume_22.webp"
@@ -294,7 +294,7 @@
         "en": null
       },
       "pages": {
-        "jp": 288,
+        "jp": "288 p",
         "en": null
       },
       "imagePath": "assets/img/Light_Novel_Volume_23.webp"
@@ -307,7 +307,7 @@
         "en": null
       },
       "pages": {
-        "jp": 288,
+        "jp": "288 p",
         "en": null
       },
       "imagePath": "assets/img/Light_Novel_Volume_24.webp"
@@ -320,8 +320,8 @@
         "en": null
       },
       "pages": {
-        "jp": null,
-        "en": 256
+        "jp": "256 p",
+        "en": null
       },
       "imagePath": "assets/img/Light_Novel_Volume_25.webp"
     }

@@ -38,8 +38,26 @@ function addCards(section, filePath = "data.json") {
                 <h1 class="modal-title fs-5" id="vol${key.volume}Label">Volume ${key.volume}</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
-                ${key.summary || "Nothing lmaoaoaoa"}
+              <div class="modal-body text-start">
+                 <img src="${key.imagePath}" class="img-fluid" alt="Volume ${key.volume} Modal Pic">
+
+                 <h4 class="pt-4">Summary</h4>
+                 <p>${key.summary || "Nothing lmaoaoaoa"}</p>
+
+                 <h4>Details</h4>
+                 <div class="d-flex">
+                   <div class="w-50">
+                     <h6 class="fw-bold">Release Date:</h6>
+                     <p>JP: ${key.releaseDate.jp || "N/A"}</p>
+                     <p>EN: ${key.releaseDate.en || "N/A"}</p>
+                   </div>
+
+                   <div class="w-50">
+                     <h6 class="fw-bold">Pages:</h6>
+                     <p>JP: ${key.pages.jp || "N/A"}</p>
+                     <p>EN: ${key.pages.en || "N/A"}</p>
+                   </div>
+                 </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
