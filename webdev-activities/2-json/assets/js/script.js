@@ -116,7 +116,7 @@ function _addCharacter(character) {
            <p>${character.description || "Nothing lmaoaoaoa"}</p>
 
            <h4>Details</h4>
-           <div class="d-flex mt-3">
+           <div class="d-flex mt-3 gap-3">
              <div class="w-50">
                <h6 class="fw-bold">Witch Title:</h6>
                <p>${character.title || "N/A"}</p>
