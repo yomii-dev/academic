@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>uh</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,7 +13,7 @@
   </head>
   <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg sticky-top bg-ctp-crust">
+    <nav class="navbar navbar-expand-lg sticky-top bg-secondary-subtle">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="" alt="Site Icon" class="rounded-3" style="height: 40px" />
@@ -38,15 +38,33 @@
     </nav>
 
     <!--Main content-->
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="card">
-            <input type="text" id="searchInput">
-            <div class="btn btn-primary" onclick="fetchCharacters()"></div>
-            <img src="" alt="" id="image" />
-            <h3 id="name"></h3>
-            <p id="birthdate"></p>
+    <div class="container mt-5">
+      <div class="row gx-5">
+        <!--Left search + filter thing-->
+        <div class="col-3">
+          <div class="card p-3 d-flex flex-column">
+            <!--search thingie-->
+            <label for="searchInput" class="form-label">Search</label>
+            <input type="text" class="form-control" id="searchInput" />
+
+            <!--filter-->
+            <label for="type" class="form-label mt-3">Type</label>
+            <select class="form-select" aria-label="type" id="type">
+              <option selected value="characters">Characters</option>
+              <option value="books">Books</option>
+              <option value="houses">Houses</option>
+              <option value="spells">Spells</option>
+            </select>
+
+            <!--button-->
+            <div class="btn btn-primary mt-3" onclick="fetchStuff()">boop</div>
+          </div>
+        </div>
+
+        <!--Character cards and stuff-->
+        <div class="col-9">
+          <div class="row" id="parent">
+            <!--js fills this thingie-->
           </div>
         </div>
       </div>
@@ -59,18 +77,25 @@
     ></script>
 
     <script>
-      const elImage = document.getElementById("image");
-      const elName = document.getElementById("name");
-      const elBirthdate = document.getElementById("birthdate");
       const elInput = document.getElementById("searchInput");
+      const elType = document.getElementById("type");
 
-      const fetchCharacters = async () => {
+      const elParent = document.getElementById("parent");
+
+      const fetchStuff = async () => {
         const response = await fetch(
-          "https://potterapi-fedeperin.vercel.app/en/characters?search=" + elInput.value,
+          `https://potterapi-fedeperin.vercel.app/en/${elType.value}?search=${elInput.value}`,
         );
-        const characters = await response.json();
 
-        elImage.src = characters[0].image;
+        const stuff = await response.json();
+
+        // for loop ts
+        // also make function so its usable for every type
+        elParent.innerHTML += `
+          <div class="col-3">
+            <div class="card">hi</div>
+          </div>
+        `;
       };
     </script>
   </body>
