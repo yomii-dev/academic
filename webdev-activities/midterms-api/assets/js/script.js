@@ -37,6 +37,7 @@ function addCard(type, data) {
 // maybe i could refactor these later idk
 function _renderCharacter(data) {
   // use the id from potter api for getting data on the dedicated page idk
+  // also change color based on house?
   elParent.innerHTML += `
     <div class="col-12">
       <a href="#" class="card h-item flex-row justify-content-between">
