@@ -2,10 +2,12 @@ const elInput = document.getElementById("searchInput");
 const elType = document.getElementById("type");
 const elParent = document.getElementById("parent");
 const elPage = document.getElementById("currentPage");
+const elPrev = document.getElementById("prevPage");
+const elNext = document.getElementById("nextPage");
 
 const uh = {
   fullName: "Galfoy",
-  nickname: "Galfoy",
+  nickname: "Galfoy | Malfoid",
   hogwartsHouse: "Slytherin",
   interpretedBy: "redteneri",
   children: [],
@@ -38,7 +40,6 @@ function movePage(direction) {
       break;
   }
 
-  elPage.innerHTML = page;
   fetchStuff();
 }
 
@@ -149,8 +150,19 @@ const fetchStuff = async () => {
     stuff.push(uh);
   }
 
+  const hasPrev = page > 1;
+  const hasNext = page * perPage < stuff.length;
+  elPrev.classList.toggle("disabled", !hasPrev);
+  elNext.classList.toggle("disabled", !hasNext);
+  // make page indicator a number thing???
+
+
+  const start = page * perPage - perPage;
+  const end = Math.min(start + perPage, stuff.length);
+  elPage.innerHTML = page;
+
   // also make function so its usable for every type - in progress
-  for (let i = page * perPage - perPage; i < perPage * page; i++) {
+  for (let i = start; i < end; i++) {
     addCard(elType.value, stuff[i]);
   }
 
