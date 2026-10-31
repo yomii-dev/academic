@@ -1,7 +1,7 @@
 const elInput = document.getElementById("searchInput");
 const elType = document.getElementById("type");
-
 const elParent = document.getElementById("parent");
+const elPage = document.getElementById("currentPage");
 
 const uh = {
   fullName: "Galfoy",
@@ -22,6 +22,27 @@ const houseColors = {
   Hufflepuff: "#ECB939",
 };
 
+// Pagination
+let page = 1;
+const perPage = 5;
+
+function movePage(direction) {
+  switch (direction) {
+    case "previous":
+      page = page - 1 > 0 ? page - 1 : 1;
+      break;
+    case "next":
+      page++;
+      break;
+    default:
+      break;
+  }
+
+  elPage.innerHTML = page;
+  fetchStuff();
+}
+
+// Card thingie
 function addCard(type, data) {
   switch (type) {
     case "characters":
@@ -108,6 +129,13 @@ function isMalfoy() {
   return isMalfoy;
 }
 
+function search() {
+  // basically a wrapper for fetchStuff but resets page to 1
+  page = 1;
+  elPage.innerHTML = page;
+  fetchStuff();
+}
+
 const fetchStuff = async () => {
   // clear parent innerHTML
   elParent.innerHTML = "";
@@ -122,10 +150,13 @@ const fetchStuff = async () => {
   }
 
   // also make function so its usable for every type - in progress
-  for (let i = 0; i < stuff.length; i++) {
+  for (let i = page * perPage - perPage; i < perPage * page; i++) {
     addCard(elType.value, stuff[i]);
   }
 
   // add something like nothing found if nothing found(wow)
   elParent.innerHTML = elParent.innerHTML || "Nothing lmaoaoaoa";
 };
+
+// load characters on first load
+fetchStuff();

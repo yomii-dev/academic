@@ -10,7 +10,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!--Navbar-->
@@ -43,7 +43,10 @@
       <div class="row gx-5">
         <!--Left search + filter thing-->
         <div class="col-3">
-          <div class="card p-3 d-flex flex-column sticky-top" style="top: 6rem;">
+          <div
+            class="card p-3 d-flex flex-column sticky-top gap-1"
+            style="top: 6rem"
+          >
             <!--search thingie-->
             <label for="searchInput" class="form-label">Search</label>
             <input type="text" class="form-control" id="searchInput" />
@@ -58,9 +61,31 @@
             </select>
 
             <!--button-->
-            <button class="btn btn-primary mt-3" onclick="fetchStuff()">
+            <button class="btn btn-primary mt-3" onclick="search()">
               boop
             </button>
+
+            <div class="d-flex gap-2"></div>
+
+            <nav aria-label="..." class="mx-auto">
+              <ul class="pagination">
+                <li class="page-item">
+                  <button class="btn btn-primary page-link" onclick="movePage('previous')">
+                    prev
+                  </button>
+                </li>
+
+                <li class="page-item">
+                  <span class="page-link" id="currentPage">1</span>
+                </li>
+
+                <li class="page-item">
+                  <button class="btn btn-primary page-link" onclick="movePage('next')">
+                    next
+                  </button>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
 
