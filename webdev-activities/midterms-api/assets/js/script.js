@@ -36,19 +36,24 @@ function addCard(type, data) {
 
 // maybe i could refactor these later idk
 function _renderCharacter(data) {
+  // use the id from potter api for getting data on the dedicated page idk
   elParent.innerHTML += `
-    <div class="col-3">
-      <div class="card">
+    <div class="col-12">
+      <a href="#" class="card h-item flex-row justify-content-between">
+        <div class="p-4">
+          <h3>${data.fullName}</h3>
+          <h4>"${data.nickname}"</h4>
+          <h5>House ${data.hogwartsHouse}</h4>
+        </div>
         <img src="${data.image}" alt="" class="img-fluid">
-        <h5> ${data.fullName} </h5>
-      </div>
+      </a>
     </div>
   `;
 }
 
 function _renderBook(data) {
   elParent.innerHTML += `
-    <div class="col-3">
+    <div class="col-12">
       <div class="card">${data.title}</div>
     </div>
   `;
@@ -56,7 +61,7 @@ function _renderBook(data) {
 
 function _renderHouse(data) {
   elParent.innerHTML += `
-    <div class="col-3">
+    <div class="col-12">
       <div class="card">${data.house}</div>
     </div>
   `;
@@ -64,7 +69,7 @@ function _renderHouse(data) {
 
 function _renderSpell(data) {
   elParent.innerHTML += `
-    <div class="col-3">
+    <div class="col-12">
       <div class="card">${data.spell}</div>
     </div>
   `;
