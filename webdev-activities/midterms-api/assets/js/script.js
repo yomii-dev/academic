@@ -15,6 +15,13 @@ const uh = {
 
 const uhWords = ["galfoy", "malfoid"];
 
+const houseColors = {
+  Gryffindor: "#740001",
+  Slytherin: "#1A472A",
+  Ravenclaw: "#0E1A40",
+  Hufflepuff: "#ECB939",
+};
+
 function addCard(type, data) {
   switch (type) {
     case "characters":
@@ -40,7 +47,11 @@ function _renderCharacter(data) {
   // also change color based on house?
   elParent.innerHTML += `
     <div class="col-12">
-      <a href="#" class="card h-item flex-row justify-content-between">
+      <a
+        href="#"
+        class="card h-item flex-row justify-content-between text-white text-decoration-none"
+        style="background-color: ${houseColors[data.hogwartsHouse]};"
+      >
         <div class="p-4">
           <h3>${data.fullName}</h3>
           <h4>"${data.nickname}"</h4>
@@ -55,7 +66,7 @@ function _renderCharacter(data) {
 function _renderBook(data) {
   elParent.innerHTML += `
     <div class="col-12">
-      <div class="card">${data.title}</div>
+      <a href="#" class="card h-item text-decoration-none">${data.title}</a>
     </div>
   `;
 }
@@ -63,16 +74,24 @@ function _renderBook(data) {
 function _renderHouse(data) {
   elParent.innerHTML += `
     <div class="col-12">
-      <div class="card">${data.house}</div>
+      <a
+        href="#"
+        class="card h-item text-decoration-none text-white"
+        style="background-color: ${houseColors[data.house]};"
+      >
+        ${data.house}
+      </a>
     </div>
   `;
 }
 
 function _renderSpell(data) {
   elParent.innerHTML += `
-    <div class="col-12">
-      <div class="card">${data.spell}</div>
-    </div>
+    <a
+      href="#"
+      class="col-12">
+      <div class="card h-item text-decoration-none">${data.spell}</div>
+    </a>
   `;
 }
 
@@ -98,7 +117,7 @@ const fetchStuff = async () => {
   );
   const stuff = await response.json();
 
-  if (isMalfoy()) {
+  if (elType.value == "characters" && isMalfoy()) {
     stuff.push(uh);
   }
 
