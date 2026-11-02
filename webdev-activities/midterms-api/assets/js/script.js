@@ -51,6 +51,7 @@ function movePage(direction) {
 const queryString = window.location.search;
 // make it easier to work with url variables
 const urlParams = new URLSearchParams(queryString);
+const urlSearch = urlParams.get("search");
 const urlPage = parseInt(urlParams.get("page")) || null;
 const urlType =
   urlParams.get("type") && types.includes(urlParams.get("type"))
@@ -58,7 +59,7 @@ const urlType =
     : null;
 
 // update stuff on start if url variables exists
-// might change ts so that it changes when movePage() is called
+elInput.value = urlSearch ?? null;
 page = urlPage > 0 ? urlPage : page;
 elType.value =
   urlParams.has("type") && types.includes(urlType)
@@ -159,6 +160,17 @@ function search() {
   fetchStuff();
 }
 
+function updateURL() {
+  urlParams.set("page", page);
+  urlParams.set("type", elType.value);
+  elInput.value == ""
+    ? urlParams.delete("search")
+    : urlParams.set("search", elInput.value);
+
+  const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+  history.replaceState(null, "", newUrl);
+}
+
 const fetchStuff = async () => {
   // clear parent innerHTML
   elParent.innerHTML = "";
@@ -176,6 +188,8 @@ const fetchStuff = async () => {
   if (page * perPage > stuff.length + (perPage - 1)) {
     page = Math.floor(stuff.length / perPage);
   }
+
+  updateURL();
 
   const hasPrev = page > 1;
   const hasNext = page * perPage < stuff.length;
