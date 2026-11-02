@@ -1,3 +1,4 @@
+// Initialization
 const elInput = document.getElementById("searchInput");
 const elType = document.getElementById("type");
 const elParent = document.getElementById("parent");
@@ -24,6 +25,8 @@ const houseColors = {
   Hufflepuff: "#ECB939",
 };
 
+const types = ["characters", "books", "houses", "spells"];
+
 // Pagination
 let page = 1;
 const perPage = 5;
@@ -42,6 +45,25 @@ function movePage(direction) {
 
   fetchStuff();
 }
+
+// URL thingie
+// get the url variables as string i think
+const queryString = window.location.search;
+// make it easier to work with url variables
+const urlParams = new URLSearchParams(queryString);
+const urlPage = parseInt(urlParams.get("page")) || null;
+const urlType =
+  urlParams.get("type") && types.includes(urlParams.get("type"))
+    ? urlParams.get("type")
+    : null;
+
+// update stuff on start if url variables exists
+// might change ts so that it changes when movePage() is called
+page = urlPage ?? page;
+elType.value =
+  urlParams.has("type") && types.includes(urlParams)
+    ? urlParams.get("type")
+    : elType.value;
 
 // Card thingie
 function addCard(type, data) {
