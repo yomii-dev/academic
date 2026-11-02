@@ -59,9 +59,9 @@ const urlType =
 
 // update stuff on start if url variables exists
 // might change ts so that it changes when movePage() is called
-page = urlPage ?? page;
+page = urlPage > 0 ? urlPage : page;
 elType.value =
-  urlParams.has("type") && types.includes(urlParams)
+  urlParams.has("type") && types.includes(urlType)
     ? urlParams.get("type")
     : elType.value;
 
@@ -172,12 +172,16 @@ const fetchStuff = async () => {
     stuff.push(uh);
   }
 
+  // if page is too high from url var then set it to the last page
+  if (page * perPage > stuff.length + (perPage - 1)) {
+    page = Math.floor(stuff.length / perPage);
+  }
+
   const hasPrev = page > 1;
   const hasNext = page * perPage < stuff.length;
   elPrev.classList.toggle("disabled", !hasPrev);
   elNext.classList.toggle("disabled", !hasNext);
   // make page indicator a number thing???
-
 
   const start = page * perPage - perPage;
   const end = Math.min(start + perPage, stuff.length);
