@@ -113,7 +113,7 @@ function _renderBook(data) {
     <div class="col-12">
       <a
         href="#"
-        class="card h-item flex-row justify-content-between text-decoration-none bg-secondary-subtle overflow-hidden"
+        class="card h-item flex-row justify-content-between text-decoration-none bg-body-tertiary overflow-hidden"
       >
         <div class="p-4">
           <h3>${data.title}</h3>
@@ -226,4 +226,4 @@ const fetchStuff = async () => {
 };
 
 // load characters on first load
-// fetchStuff();
+fetchStuff();
