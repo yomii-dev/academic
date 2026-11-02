@@ -131,10 +131,15 @@ function _renderHouse(data) {
     <div class="col-12">
       <a
         href="#"
-        class="card h-item text-decoration-none text-white"
+        class="card h-item flex-row justify-content-between text-white text-decoration-none overflow-hidden"
         style="background-color: ${houseColors[data.house]};"
       >
-        ${data.house}
+        <div class="p-4">
+          <h3>${data.house}</h3>
+          <p class="mb-0">${data.animal}</p>
+          <p>Founder: ${data.founder}</p>
+        </div>
+      <img src="assets/img/${data.house}.webp" alt="" class="img-fluid m-3">
       </a>
     </div>
   `;
