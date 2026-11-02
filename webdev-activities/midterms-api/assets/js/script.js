@@ -197,7 +197,7 @@ const fetchStuff = async () => {
   elNext.classList.toggle("disabled", !hasNext);
   // make page indicator a number thing???
 
-  const start = page * perPage - perPage;
+  const start = Math.max(page * perPage - perPage, 0);
   const end = Math.min(start + perPage, stuff.length);
   elPage.innerHTML = page;
 
