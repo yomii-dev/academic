@@ -186,7 +186,7 @@ const fetchStuff = async () => {
 
   // if page is too high from url var then set it to the last page
   if (page * perPage > stuff.length + (perPage - 1)) {
-    page = Math.floor(stuff.length / perPage);
+    page = Math.ceil(stuff.length / perPage);
   }
 
   updateURL();
