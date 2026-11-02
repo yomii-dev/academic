@@ -29,7 +29,7 @@ const types = ["characters", "books", "houses", "spells"];
 
 // Pagination
 let page = 1;
-const perPage = 5;
+const perPage = 4;
 
 function movePage(direction) {
   switch (direction) {
@@ -94,13 +94,13 @@ function _renderCharacter(data) {
     <div class="col-12">
       <a
         href="#"
-        class="card h-item flex-row justify-content-between text-white text-decoration-none"
+        class="card h-item flex-row justify-content-between text-white text-decoration-none overflow-hidden"
         style="background-color: ${houseColors[data.hogwartsHouse]};"
       >
         <div class="p-4">
           <h3>${data.fullName}</h3>
-          <h4>"${data.nickname}"</h4>
-          <h5>House ${data.hogwartsHouse}</h4>
+          <p class="mb-0">"${data.nickname}"</p>
+          <p>House ${data.hogwartsHouse}</p>
         </div>
         <img src="${data.image}" alt="" class="img-fluid">
       </a>
@@ -111,7 +111,17 @@ function _renderCharacter(data) {
 function _renderBook(data) {
   elParent.innerHTML += `
     <div class="col-12">
-      <a href="#" class="card h-item text-decoration-none">${data.title}</a>
+      <a
+        href="#"
+        class="card h-item flex-row justify-content-between text-decoration-none bg-secondary-subtle overflow-hidden"
+      >
+        <div class="p-4">
+          <h3>${data.title}</h3>
+          <p class="mb-0">${data.releaseDate}</p>
+          <p>${data.pages} pages</p>
+        </div>
+        <img src="${data.cover}" alt="${data.title} Book Cover" class="img-fluid">
+      </a>
     </div>
   `;
 }
@@ -211,4 +221,4 @@ const fetchStuff = async () => {
 };
 
 // load characters on first load
-fetchStuff();
+// fetchStuff();
