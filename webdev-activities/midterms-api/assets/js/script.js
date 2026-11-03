@@ -46,7 +46,7 @@ function movePage(direction) {
   fetchStuff();
 }
 
- function togglePaginationButtons(data) {
+function togglePaginationButtons(data) {
   const hasPrev = page > 1;
   const hasNext = page * perPage < data.length;
   elPrev.classList.toggle("disabled", !hasPrev);
@@ -100,7 +100,7 @@ function _renderCharacter(data) {
   elParent.innerHTML += `
     <div class="col-12">
       <a
-        href="#"
+        href="view.html?index=${data.index ?? "galfoy"}&${urlParams.toString()}"
         class="card h-item flex-row justify-content-between text-white text-decoration-none overflow-hidden"
         style="background-color: ${houseColors[data.hogwartsHouse]};"
       >
@@ -119,7 +119,7 @@ function _renderBook(data) {
   elParent.innerHTML += `
     <div class="col-12">
       <a
-        href="#"
+        href="view.html?index=${data.index}&${urlParams.toString()}"
         class="card h-item flex-row justify-content-between text-decoration-none bg-body-tertiary overflow-hidden"
       >
         <div class="p-4">
@@ -137,7 +137,7 @@ function _renderHouse(data) {
   elParent.innerHTML += `
     <div class="col-12">
       <a
-        href="#"
+        href="view.html?index=${data.index}&${urlParams.toString()}"
         class="card h-item flex-row justify-content-between text-white text-decoration-none overflow-hidden"
         style="background-color: ${houseColors[data.house]};"
       >
@@ -154,15 +154,16 @@ function _renderHouse(data) {
 
 function _renderSpell(data) {
   elParent.innerHTML += `
-    <a href="#" class="col-12">
+    <div class="col-12">
       <div
+        href="view.html?index=${data.index}&${urlParams.toString()}"
         class="card h-item text-decoration-none bg-body-tertiary text-center justify-content-center"
       >
         <h3>
           ${data.spell}
         </h3>
       </div>
-    </a>
+    </div>
   `;
 }
 
@@ -219,7 +220,7 @@ const fetchStuff = async () => {
 
   pageCeilCheck(stuff);
   updateURL();
-  togglePaginationButtons(stuff)
+  togglePaginationButtons(stuff);
 
   const start = Math.max(page * perPage - perPage, 0);
   const end = Math.min(start + perPage, stuff.length);
