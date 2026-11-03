@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>View</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top bg-secondary-subtle">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/img/logo.png"
+            alt="Site Icon"
+            class="rounded-3"
+            style="height: 40px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav">
+            <a href="../../index.html" class="nav-link">Home</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row p-3 g-3" id="parent"></div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // yoink
+      const queryString = window.location.search;
+      // make it easier to work with url variables
+      const urlParams = new URLSearchParams(queryString);
+      const index = urlParams.get("index");
+      urlParams.delete("index");
+      const type = urlParams.get("type");
+      const elParent = document.getElementById("parent");
+
+      const uh = {
+        fullName: "Galfoy",
+        nickname: "Galfoy | Malfoid",
+        hogwartsHouse: "Slytherin",
+        interpretedBy: "redteneri",
+        children: ["me", "ne9n", "t9kwa", "yaj", "arkinetic", "ren", "muchii", "mark", "almanfi", "snufkin"],
+        image: "assets/img/galfoy.jpg",
+        birthdate: "Jul 31, 1980",
+      };
+
+      const houseColors = {
+        Gryffindor: "#740001",
+        Slytherin: "#1A472A",
+        Ravenclaw: "#0E1A40",
+        Hufflepuff: "#ECB939",
+      };
+
+      // Card thingie
+      function addCard(type, data) {
+        switch (type) {
+          case "characters":
+            _renderCharacter(data);
+            break;
+          case "books":
+            _renderBook(data);
+            break;
+          case "houses":
+            _renderHouse(data);
+            break;
+          case "spells":
+            _renderSpell(data);
+            break;
+          default:
+            break;
+        }
+      }
+
+      function _renderCharacter(data) {
+        elParent.innerHTML += `
+        <div class="col-12">
+          <div
+            class="card h-item flex-row justify-content-between text-white text-decoration-none overflow-hidden"
+            style="background-color: ${houseColors[data.hogwartsHouse]};"
+          >
+            <div class="p-4">
+              <h1>${data.fullName}</h1>
+              <h3>AKA "${data.nickname}"</h3>
+              <h3>Birthdate: ${data.birthdate}</h3>
+              <h3>House ${data.hogwartsHouse}</h3>
+              <img
+                src="assets/img/${data.hogwartsHouse}.webp"
+                alt="${data.hogwartsHouse} Logo"
+                style="height: 16rem;"
+              >
+            </div>
+
+            <div class="p-4">
+              <h3>Interpreted by: ${data.interpretedBy}</h5>
+              <h3 class="mt-3">${data.fullName == "Galfoy" ? "Mommy's good boys" : "Children"}:</h5>
+              <pre class="h4">${data.children.length == 0 ? "None" : data.children.join("\n")}</pre>
+            </div>
+            <img src="${data.image}" alt="" class="img-fluid" style="height: 34rem;">
+          </div>
+        </div>
+        `;
+      }
+
+      function _renderBook(data) {
+        // TODO
+        elParent.innerHTML += `
+          <div class="col-12">
+            <div
+              class="card h-item flex-row justify-content-between text-decoration-none bg-body-tertiary overflow-hidden"
+            >
+              <div class="p-4">
+                <h1>${data.title}</h1>
+                <h3>Description:</h3>
+                <h5>${data.description}</h5>
+              </div>
+              <div>
+                <h3>${data.releaseDate}</h3>
+                <h3>${data.pages} pages</h3>
+              </div>
+              <img src="${data.cover}" alt="${data.title} Book Cover" class="img-fluid">
+            </div>
+          </div>
+        `;
+      }
+
+      function _renderHouse(data) {
+        elParent.innerHTML += `
+          <div class="col-12">
+            <a
+              href="view.html?index=${data.index}&${urlParams.toString()}"
+              class="card h-item flex-row justify-content-between text-white text-decoration-none overflow-hidden"
+              style="background-color: ${houseColors[data.house]};"
+            >
+              <div class="p-4">
+                <h3>${data.house}</h3>
+                <p class="mb-0">${data.animal}</p>
+                <p>Founder: ${data.founder}</p>
+              </div>
+            <img src="assets/img/${data.house}.webp" alt="" class="img-fluid m-3">
+            </a>
+          </div>
+        `;
+      }
+
+      function _renderSpell(data) {
+        elParent.innerHTML += `
+          <div class="col-12">
+            <div
+              href="view.html?index=${data.index}&${urlParams.toString()}"
+              class="card h-item text-decoration-none bg-body-tertiary text-center justify-content-center"
+            >
+              <h3>
+                ${data.spell}
+              </h3>
+            </div>
+          </div>
+        `;
+      }
+
+      const fetchStuff = async () => {
+        elParent.innerHTML += `
+          <div class="col-12 d-flex justify-content-end">
+            <a class="btn btn-outline-primary" href="index.html?${urlParams}">back</a>
+          </div>
+        `;
+        if (index == "galfoy") {
+          addCard(type, uh);
+          return;
+        }
+
+        const response = await fetch(
+          `https://potterapi-fedeperin.vercel.app/en/${type}?index=${index}`,
+        );
+        const stuff = await response.json();
+
+        addCard(type, stuff);
+      };
+
+      fetchStuff();
+    </script>
+  </body>
+</html>

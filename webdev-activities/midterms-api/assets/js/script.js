@@ -14,6 +14,7 @@ const uh = {
   children: [],
   image: "assets/img/galfoy.jpg",
   birthDate: "Jul 31, 1980",
+  index: "galfoy"
 };
 
 const uhWords = ["galfoy", "malfoid"];
@@ -100,7 +101,7 @@ function _renderCharacter(data) {
   elParent.innerHTML += `
     <div class="col-12">
       <a
-        href="view.html?index=${data.index ?? "galfoy"}&${urlParams.toString()}"
+        href="view.html?index=${data.index}&${urlParams.toString()}"
         class="card h-item flex-row justify-content-between text-white text-decoration-none overflow-hidden"
         style="background-color: ${houseColors[data.hogwartsHouse]};"
       >
