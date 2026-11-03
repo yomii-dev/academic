@@ -147,10 +147,14 @@ function _renderHouse(data) {
 
 function _renderSpell(data) {
   elParent.innerHTML += `
-    <a
-      href="#"
-      class="col-12">
-      <div class="card h-item text-decoration-none">${data.spell}</div>
+    <a href="#" class="col-12">
+      <div
+        class="card h-item text-decoration-none bg-body-tertiary text-center justify-content-center"
+      >
+        <h3>
+          ${data.spell}
+        </h3>
+      </div>
     </a>
   `;
 }
