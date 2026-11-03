@@ -46,6 +46,14 @@ function movePage(direction) {
   fetchStuff();
 }
 
+ function togglePaginationButtons(data) {
+  const hasPrev = page > 1;
+  const hasNext = page * perPage < data.length;
+  elPrev.classList.toggle("disabled", !hasPrev);
+  elNext.classList.toggle("disabled", !hasNext);
+  // make page indicator a number thing???
+}
+
 // URL thingie
 // get the url variables as string i think
 const queryString = window.location.search;
@@ -89,7 +97,6 @@ function addCard(type, data) {
 // maybe i could refactor these later idk
 function _renderCharacter(data) {
   // use the id from potter api for getting data on the dedicated page idk
-  // also change color based on house?
   elParent.innerHTML += `
     <div class="col-12">
       <a
@@ -190,6 +197,13 @@ function updateURL() {
   history.replaceState(null, "", newUrl);
 }
 
+function pageCeilCheck(data) {
+  // if page is too high from url var then set it to the last page
+  if (page * perPage > data.length + (perPage - 1)) {
+    page = Math.ceil(data.length / perPage);
+  }
+}
+
 const fetchStuff = async () => {
   // clear parent innerHTML
   elParent.innerHTML = "";
@@ -203,18 +217,9 @@ const fetchStuff = async () => {
     stuff.push(uh);
   }
 
-  // if page is too high from url var then set it to the last page
-  if (page * perPage > stuff.length + (perPage - 1)) {
-    page = Math.ceil(stuff.length / perPage);
-  }
-
+  pageCeilCheck(stuff);
   updateURL();
-
-  const hasPrev = page > 1;
-  const hasNext = page * perPage < stuff.length;
-  elPrev.classList.toggle("disabled", !hasPrev);
-  elNext.classList.toggle("disabled", !hasNext);
-  // make page indicator a number thing???
+  togglePaginationButtons(stuff)
 
   const start = Math.max(page * perPage - perPage, 0);
   const end = Math.min(start + perPage, stuff.length);
