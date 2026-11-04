@@ -67,7 +67,18 @@
         nickname: "Galfoy | Malfoid",
         hogwartsHouse: "Slytherin",
         interpretedBy: "redteneri",
-        children: ["me", "ne9n", "t9kwa", "yaj", "arkinetic", "ren", "muchii", "mark", "almanfi", "snufkin"],
+        children: [
+          "me",
+          "ne9n",
+          "t9kwa",
+          "yaj",
+          "arkinetic",
+          "ren",
+          "muchii",
+          "mark",
+          "almanfi",
+          "snufkin",
+        ],
         image: "assets/img/galfoy.jpg",
         birthdate: "Jul 31, 1980",
       };
@@ -103,7 +114,8 @@
         elParent.innerHTML += `
         <div class="col-12">
           <div
-            class="card h-item flex-row justify-content-between text-white text-decoration-none overflow-hidden"
+            class="card h-item flex-col flex-lg-row justify-content-between
+            text-decoration-none overflow-hidden align-items-center text-white"
             style="background-color: ${houseColors[data.hogwartsHouse]};"
           >
             <div class="p-4">
@@ -130,7 +142,6 @@
       }
 
       function _renderBook(data) {
-        // TODO
         elParent.innerHTML += `
           <div class="col-12">
             <div
@@ -160,18 +171,25 @@
       function _renderHouse(data) {
         elParent.innerHTML += `
           <div class="col-12">
-            <a
-              href="view.html?index=${data.index}&${urlParams.toString()}"
-              class="card h-item flex-row justify-content-between text-white text-decoration-none overflow-hidden"
+            <div
+              class="card h-item flex-col flex-lg-row justify-content-between
+              text-decoration-none overflow-hidden align-items-lg-center
+              text-white"
               style="background-color: ${houseColors[data.house]};"
             >
               <div class="p-4">
-                <h3>${data.house}</h3>
-                <p class="mb-0">${data.animal}</p>
-                <p>Founder: ${data.founder}</p>
+                <h1>${data.house}</h1>
+                <h4>Animal: ${data.animal} ${data.emoji}</h4>
+                <h4>Founder: ${data.founder}</h4>
+                <h5>Colors: ${data.colors.join(", ")}</h5>
               </div>
-            <img src="assets/img/${data.house}.webp" alt="" class="img-fluid m-3">
-            </a>
+            <img
+              src="assets/img/${data.house}.webp"
+              alt=""
+              class="img-fluid m-3"
+              style="max-height: 32rem;"
+            >
+            </div>
           </div>
         `;
       }
