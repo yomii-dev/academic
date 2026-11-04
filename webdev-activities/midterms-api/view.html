@@ -134,18 +134,24 @@
         elParent.innerHTML += `
           <div class="col-12">
             <div
-              class="card h-item flex-row justify-content-between text-decoration-none bg-body-tertiary overflow-hidden"
+              class="card h-item flex-col flex-lg-row justify-content-between
+              text-decoration-none bg-body-tertiary overflow-hidden
+              align-items-lg-center"
             >
-              <div class="p-4">
+              <div class="p-3">
                 <h1>${data.title}</h1>
-                <h3>Description:</h3>
-                <h5>${data.description}</h5>
+                <p>${data.description}</p>
               </div>
-              <div>
-                <h3>${data.releaseDate}</h3>
-                <h3>${data.pages} pages</h3>
+              <div class="p-3" style="min-width: 20vw;">
+                <h3>Released on:<h3>
+                <h5>${data.releaseDate}</h3>
+                <h5>${data.pages} pages</h3>
               </div>
-              <img src="${data.cover}" alt="${data.title} Book Cover" class="img-fluid">
+              <img
+                src="${data.cover}"
+                alt="${data.title} Book Cover"
+                class="img-fluid p-5 p-lg-0"
+              >
             </div>
           </div>
         `;
