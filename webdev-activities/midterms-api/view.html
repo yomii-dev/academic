@@ -43,7 +43,7 @@
     </nav>
 
     <div class="container">
-      <div class="row p-3 g-3" id="parent"></div>
+      <div class="row p-3 g-3 justify-content-center" id="parent"></div>
     </div>
 
     <script
@@ -114,8 +114,8 @@
         elParent.innerHTML += `
         <div class="col-12">
           <div
-            class="card h-item flex-col flex-lg-row justify-content-between
-            text-decoration-none overflow-hidden align-items-center text-white"
+            class="card flex-col flex-lg-row justify-content-between
+            overflow-hidden align-items-center text-white"
             style="background-color: ${houseColors[data.hogwartsHouse]};"
           >
             <div class="p-4">
@@ -145,8 +145,8 @@
         elParent.innerHTML += `
           <div class="col-12">
             <div
-              class="card h-item flex-col flex-lg-row justify-content-between
-              text-decoration-none bg-body-tertiary overflow-hidden
+              class="card flex-col flex-lg-row justify-content-between
+              bg-body-tertiary overflow-hidden
               align-items-lg-center"
             >
               <div class="p-3">
@@ -172,8 +172,8 @@
         elParent.innerHTML += `
           <div class="col-12">
             <div
-              class="card h-item flex-col flex-lg-row justify-content-between
-              text-decoration-none overflow-hidden align-items-lg-center
+              class="card flex-col flex-lg-row justify-content-between
+              overflow-hidden align-items-lg-center
               text-white"
               style="background-color: ${houseColors[data.house]};"
             >
@@ -196,14 +196,12 @@
 
       function _renderSpell(data) {
         elParent.innerHTML += `
-          <div class="col-12">
+          <div class="col-8">
             <div
-              href="view.html?index=${data.index}&${urlParams.toString()}"
-              class="card h-item text-decoration-none bg-body-tertiary text-center justify-content-center"
+              class="card bg-body-tertiary p-3"
             >
-              <h3>
-                ${data.spell}
-              </h3>
+              <h1>${data.spell}</h1>
+              <h5>${data.use}</h5>
             </div>
           </div>
         `;

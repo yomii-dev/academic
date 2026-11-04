@@ -156,14 +156,14 @@ function _renderHouse(data) {
 function _renderSpell(data) {
   elParent.innerHTML += `
     <div class="col-12">
-      <div
+      <a
         href="view.html?index=${data.index}&${urlParams.toString()}"
         class="card h-item text-decoration-none bg-body-tertiary text-center justify-content-center"
       >
         <h3>
           ${data.spell}
         </h3>
-      </div>
+      </a>
     </div>
   `;
 }
